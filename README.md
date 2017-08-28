@@ -25,3 +25,13 @@ to the require section of your `composer.json` file.
 
 
 
+Usage
+-----
+
+Once the extension is installed, simply use it in your code by :
+
+```php
+<?php
+echo \panix\ext\fancybox\Fancybox::widget(['target' => '.image a']);
+ ?>
+```

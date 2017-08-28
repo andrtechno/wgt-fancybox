@@ -8,49 +8,24 @@
 
 namespace panix\ext\fancybox;
 
-use Yii;
-use yii\helpers\Html;
 use yii\helpers\Json;
-use yii\widgets\InputWidget;
 
-class Fancybox extends InputWidget {
+
+class Fancybox extends \yii\base\Widget {
 
     public $target;
-    public $clientOptions = [];
+    public $options = [];
 
     /**
      * @inheritdoc
      */
     public function run() {
-        if ($this->hasModel()) {
-            echo Html::activeTextarea($this->model, $this->attribute, $this->options);
-        } else {
-            echo Html::textarea($this->name, $this->value, $this->options);
-        }
-        $this->registerClientScript();
-    }
-
-    /**
-     * Registers tinyMCE js plugin
-     */
-    protected function registerClientScript() {
-
         $js = [];
         $view = $this->getView();
 
         FancyboxAsset::register($view);
-
-        $id = $this->options['id'];
-        $this->clientOptions['selector'] = "#$id";
-
-
-
-        // @codeCoverageIgnoreEnd
-
-        $options = Json::encode($this->clientOptions);
-
+        $options = Json::encode($this->options);
         $js[] = "$('$this->target').fancybox($options);";
-
         $view->registerJs(implode("\n", $js));
     }
 

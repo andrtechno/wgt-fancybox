@@ -1,8 +1,6 @@
 <?php
 /**
  *
- * TinyMCE renders a tinyMCE js plugin for WYSIWYG editing.
- *
  * @author CORNER CMS <dev@corner-cms.com>
  * @link http://www.corner-cms.com/
  */
@@ -12,9 +10,13 @@ use yii\web\AssetBundle;
 
 class FancyboxAsset extends AssetBundle
 {
-    public $sourcePath = '@vendor/tinymce/tinymce';
+    public $sourcePath = '@vendor/panix/wgt-fancybox/assets';
 
+    public $css = [
+        'jquery.fancybox.min.css'
+    ];
+    
     public $js = [
-        'tinymce.js'
+        'jquery.fancybox.min.js'
     ];
 }
