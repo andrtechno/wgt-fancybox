@@ -3,7 +3,7 @@
     "description": "Widget fancybox",
     "keywords": ["corner-cms", "extension", "widget", "fancybox"],
     "homepage": "https://github.com/andrtechno/wgt-fancybox",
-    "type": "yii2-extension",
+    "type": "extension",
     "license": "BSD 3-Clause",
     "authors": [
         {
