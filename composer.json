@@ -4,7 +4,7 @@
     "keywords": ["corner-cms", "extension", "widget", "fancybox"],
     "homepage": "https://github.com/andrtechno/wgt-fancybox",
     "type": "extension",
-    "license": "BSD 3-Clause",
+    "license": "MIT",
     "authors": [
         {
             "name": "CORNER CMS",
