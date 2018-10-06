@@ -14,7 +14,7 @@
     ],
     "require": {
         "panix/engine": "*",
-        "fancyapps/fancybox": ">=3"
+        "bower-asset/fancybox": "~3.3.5"
     },
     "autoload": {
         "psr-4": {
