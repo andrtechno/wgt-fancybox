@@ -8,10 +8,16 @@
 
 namespace panix\ext\fancybox;
 
+use panix\engine\View;
 use yii\helpers\Json;
+use yii\base\Widget;
 
-
-class Fancybox extends \yii\base\Widget {
+/**
+ * Class Fancybox
+ * @package panix\ext\fancybox
+ */
+class Fancybox extends Widget
+{
 
     public $target;
     public $options = [];
@@ -19,14 +25,15 @@ class Fancybox extends \yii\base\Widget {
     /**
      * @inheritdoc
      */
-    public function run() {
+    public function run()
+    {
         $js = [];
         $view = $this->getView();
 
         FancyboxAsset::register($view);
         $options = Json::encode($this->options);
         $js[] = "$('$this->target').fancybox($options);";
-        $view->registerJs(implode("\n", $js));
+        $view->registerJs(implode("\n", $js), View::POS_END);
     }
 
 }
