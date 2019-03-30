@@ -8,7 +8,7 @@
 
 namespace panix\ext\fancybox;
 
-use panix\engine\View;
+use yii\web\View;
 use yii\helpers\Json;
 use yii\base\Widget;
 
