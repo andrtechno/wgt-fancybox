@@ -41,7 +41,12 @@ echo \panix\ext\fancybox\Fancybox::widget(['target' => 'a.fancybox-image']);
 
 echo \panix\ext\fancybox\Fancybox::widget([
     'target' => 'a.fancybox-image',
-    'options' => []
+    'options' => [
+        //..
+        'onInit'=> new \yii\web\JsExpression('function(){
+            console.log("Fancybox onInit");
+        }')
+    ]
 ]);
 
 ?>
