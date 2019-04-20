@@ -36,11 +36,20 @@ Once the extension is installed, simply use it in your code by :
 ```php
 <?php
 echo \panix\ext\fancybox\Fancybox::widget(['target' => 'a.fancybox-image']);
- ?>
+
+// or use options
+
+echo \panix\ext\fancybox\Fancybox::widget([
+    'target' => 'a.fancybox-image',
+    'options' => []
+]);
+
+?>
 ```
 
 Links
 -----
 - [Pixelion](http://pixelion.com.ua/)
 - [FancyApps](http://www.fancyapps.com/)
+- [FancyApps documentation](https://fancyapps.com/fancybox/3/docs)
 
