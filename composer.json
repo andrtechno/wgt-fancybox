@@ -1,9 +1,9 @@
 {
     "name": "panix/wgt-fancybox",
-    "description": "Widget fancybox",
-    "keywords": ["pixelion-cms", "extension", "widget", "fancybox"],
+    "description": "Fancybox widget for Yii2",
+    "keywords": ["pixelion-cms", "widget", "fancybox", "yii2"],
     "homepage": "https://github.com/andrtechno/wgt-fancybox",
-    "type": "extension",
+    "type": "yii2-extension",
     "license": "MIT",
     "authors": [
         {
@@ -13,7 +13,6 @@
         }
     ],
     "require": {
-        "panix/engine": "*",
         "bower-asset/fancybox": "^3.5.1"
     },
     "autoload": {

@@ -7,7 +7,7 @@
 
 namespace panix\ext\fancybox;
 
-use panix\engine\web\AssetBundle;
+use yii\web\AssetBundle;
 
 /**
  * Class FancyboxAsset
@@ -15,6 +15,11 @@ use panix\engine\web\AssetBundle;
  */
 class FancyboxAsset extends AssetBundle
 {
+
+    public $jsOptions = [
+        'position' => \yii\web\View::POS_END
+    ];
+
     public $sourcePath = '@bower/fancybox/dist';
 
     public $css = [

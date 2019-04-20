@@ -1,6 +1,6 @@
-wgt-fancybox
+Fancybox widget Extension
 ===========
-Widget for PIXELION CMS 2.x to use [FancyApps](http://www.fancyapps.com/)
+Widget for Yii2
 
 [![Latest Stable Version](https://poser.pugx.org/panix/wgt-fancybox/v/stable)](https://packagist.org/packages/panix/wgt-fancybox)
 [![Total Downloads](https://poser.pugx.org/panix/wgt-fancybox/downloads)](https://packagist.org/packages/panix/wgt-fancybox)
@@ -28,8 +28,6 @@ or add
 
 to the require section of your `composer.json` file.
 
-
-
 Usage
 -----
 
@@ -37,6 +35,12 @@ Once the extension is installed, simply use it in your code by :
 
 ```php
 <?php
-echo \panix\ext\fancybox\Fancybox::widget(['target' => '.image a']);
+echo \panix\ext\fancybox\Fancybox::widget(['target' => 'a.fancybox-image']);
  ?>
 ```
+
+Links
+-----
+- [Pixelion](http://pixelion.com.ua/)
+- [FancyApps](http://www.fancyapps.com/)
+
