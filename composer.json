@@ -3,7 +3,7 @@
     "description": "Fancybox widget for Yii2",
     "keywords": ["pixelion-cms", "widget", "fancybox", "yii2"],
     "homepage": "https://github.com/andrtechno/wgt-fancybox",
-    "type": "yii2-extension",
+    "type": "pixelion-widget",
     "license": "MIT",
     "authors": [
         {
