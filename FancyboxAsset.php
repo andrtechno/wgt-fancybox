@@ -20,7 +20,8 @@ class FancyboxAsset extends AssetBundle
         'position' => \yii\web\View::POS_END
     ];
 
-    public $sourcePath = '@bower/fancybox/dist';
+    //public $sourcePath = '@bower/fancybox/dist';
+
 
     public $depends = [
         'yii\web\JqueryAsset',
@@ -28,8 +29,9 @@ class FancyboxAsset extends AssetBundle
 
     public function init()
     {
+        $this->sourcePath = __DIR__.'/assets';
         parent::init();
-        $this->js[] = YII_DEBUG ? 'jquery.fancybox.js' : 'jquery.fancybox.min.js';
-        $this->css[] = YII_DEBUG ? 'jquery.fancybox.min.css' : 'jquery.fancybox.min.css';
+        $this->js[] = !YII_DEBUG ? 'jquery.fancybox.js' : 'jquery.fancybox.min.js';
+        $this->css[] = !YII_DEBUG ? 'jquery.fancybox.min.css' : 'jquery.fancybox.min.css';
     }
 }
