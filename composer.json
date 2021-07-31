@@ -13,7 +13,7 @@
         }
     ],
     "require": {
-        "bower-asset/fancybox": "^3.5.1"
+        "bower-asset/fancybox": "^3.5.7"
     },
     "autoload": {
         "psr-4": {
