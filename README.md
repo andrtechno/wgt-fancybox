@@ -1,4 +1,4 @@
-Fancybox widget Extension
+Fancybox widget
 ===========
 Widget for Yii2
 
@@ -17,13 +17,13 @@ The preferred way to install this extension is through [composer](http://getcomp
 Either run
 
 ```
-php composer require --prefer-dist panix/wgt-fancybox "*"
+php composer require --prefer-dist panix/wgt-fancybox
 ```
 
 or add
 
 ```
-"panix/wgt-fancybox": "*"
+"panix/wgt-fancybox": "^1.3.0"
 ```
 
 to the require section of your `composer.json` file.
